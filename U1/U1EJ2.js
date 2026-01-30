@@ -66,7 +66,13 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function hasRings(planets){
+  return planets.hasRings;
+}
 
+const result = hasFilters = planets.filter(hasRings);
+
+console.log(result);
 
 /**
  * TEST
