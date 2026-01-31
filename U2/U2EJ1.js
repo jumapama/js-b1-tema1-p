@@ -29,11 +29,22 @@ for(let i=0; i<10;i++){
 	console.log(fibonacci(i));
 }
 
+
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function fibonacci(i)
+{
 
-
-
+	if (i === 0) {
+		return 0;
+	
+	} else if (i === 1) {
+		return 1;
+	} else {
+		return fibonacci(i - 1) + fibonacci(i - 2);	
+	
+	}
+}
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
