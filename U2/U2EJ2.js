@@ -16,8 +16,15 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function rangeOfNumbers(num) {
+	if (num <= 0) {
+		return 0;					
+	} else {
+		return num + rangeOfNumbers(num - 1);	
+	}
+}	
 
-
+console.log(rangeOfNumbers(4));  
 
 /**
  * TEST
