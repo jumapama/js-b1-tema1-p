@@ -24,7 +24,18 @@ console.log(hypotenuse(3,4));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function hypotenuse (base, altura){
+  
+  const resultado = Math.sqrt(square(base)+square(altura));
+  
+  function square (diagonal){
+    
+    return diagonal ** 2;
+  }
+  
+ return resultado; 
+  
+}
 
 
 /**
