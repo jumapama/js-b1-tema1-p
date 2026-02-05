@@ -14,10 +14,31 @@
 */
 console.log(reverseArray(4,7,21,3)); //This will return [3,21,7,4]
 
-//Escribe aquí tu solución / escriviu aquí la vostra solució:
+//Escribe aquí tu solución / escriviu aquí la vostra solució:       
 
+const arrayMain = [4,7,21,3];
 
+function reverseArray () {
 
+  let transformado = [];
+  
+  function transforma(){
+    
+     
+     let j = 0;
+     for (let i = arrayMain.length-1;i>=0;i--){
+      
+     transformado[j] = [...arrayMain][i];
+     j++;  
+     }
+    return transformado;
+  }
+  
+  return transforma();
+  
+}
+
+console.log(reverseArray());
 
 /**
  * TEST
