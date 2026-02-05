@@ -61,7 +61,25 @@ console.log(totalApproved(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function totalApproved (students){
+ 
+function isApproved (student){
+  
+  return (student.averageGrade>=5)
+  
+}
+  
+let totalApproved = 0;
+  
+for(let student of classroomStudents){
+  
+  if (isApproved(student)) totalApproved++;
+}
+  
+return totalApproved;
+}
 
+console.log (totalApproved(classroomStudents));     
 
 
 /**
