@@ -76,8 +76,17 @@ const result = planets.map(planet => ({name:planetName(planet),diameter:planetDi
 
 console.log(result);
 
+const result2 = planets.map(planet => [planetName(planet), planetDiameter(planet)]);
 
-/**
+console.log(result2;
+
+ const planetas = planeta => [planeta.name, planeta.diameter];
+
+const result3 = planets.map(planetas);  
+
+console.log(resul3);
+
+**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
  * if you run this code outside of this environment, 
