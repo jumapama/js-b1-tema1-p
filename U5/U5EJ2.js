@@ -86,7 +86,7 @@ const result3 = planets.map(planetas);
 
 console.log(resul3);
 
-**
+/*
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
  * if you run this code outside of this environment, 
