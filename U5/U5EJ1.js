@@ -61,7 +61,22 @@ const classroomStudents = [
  
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+ function getGrades(student){
+    
+  if (student.averageGrade < 3.0) return 'D';
+   else if (student.averageGrade >=3.0 && student.averageGrade<5) 
+     return 'C-';
+   else if (student.averageGradenote >=5.0 && student.averageGrade<8.0) 
+     return 'B-';
+   else if (student.averageGrade >=8 && student.averageGrade <9) 
+     return 'A-';
+   else return 'A+'; 
+    
+  }
+  
+ const grades = classroomStudents.map(getGrades);
+  
+ console.log (grades);
 
 
 /**
