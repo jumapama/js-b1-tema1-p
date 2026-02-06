@@ -32,9 +32,15 @@ console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+const numbersArray = [4,7,21,3];
 
+  function nearEven(number){
+    return number % 2 === 0 ? number : number - 1;
+  }     
+  
+  const nearEvenNumbersArray = numbersArray.map(nearEven);     
 
-
+console.log (nearEvenNumbersArray);
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
